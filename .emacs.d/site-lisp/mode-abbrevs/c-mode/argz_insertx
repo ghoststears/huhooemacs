@@ -1,0 +1,1 @@
+argz_insert(<field "char **ARGZ">, <field "size_t *ARGZ_LEN">, <field "char *BEFORE">, <field "const char *ENTRY">)<endpoint>

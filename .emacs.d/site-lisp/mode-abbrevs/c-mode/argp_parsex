@@ -1,0 +1,1 @@
+argp_parse(<field "const struct argp *ARGP">, <field "int ARGC">, <field "char **ARGV">, <field "unsigned FLAGS">, <field "int *ARG_INDEX">, <field "void *INPUT">)<endpoint>

@@ -1,0 +1,1 @@
+pthread_key_create(<field "pthread_key_t *KEY">, <field "void(">, <field "*DESTR_FUNCTION">, <field ")(">, <field "VOID">, <field "*">, <field ")">)<endpoint>

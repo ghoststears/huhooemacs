@@ -1,0 +1,1 @@
+cbc_crypt(<field "char *KEY">, <field "char *BLOCKS">, <field "unsigned LEN">, <field "unsigned MODE">, <field "char *IVEC">)<endpoint>

@@ -1,0 +1,1 @@
+realloc(<field "void *PTR">, <field "size_t NEWSIZE">)<endpoint>

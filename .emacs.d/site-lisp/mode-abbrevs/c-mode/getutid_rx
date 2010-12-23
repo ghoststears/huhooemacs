@@ -1,0 +1,1 @@
+getutid_r(<field "const struct utmp *ID">, <field "struct utmp *BUFFER">, <field "struct utmp **RESULT">)<endpoint>

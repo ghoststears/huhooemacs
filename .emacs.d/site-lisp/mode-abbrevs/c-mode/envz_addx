@@ -1,0 +1,1 @@
+envz_add(<field "char **ENVZ">, <field "size_t *ENVZ_LEN">, <field "const char *NAME">, <field "const char *VALUE">)<endpoint>

@@ -1,0 +1,1 @@
+pthread_setcancelstate(<field "int STATE">, <field "int *OLDSTATE">)<endpoint>

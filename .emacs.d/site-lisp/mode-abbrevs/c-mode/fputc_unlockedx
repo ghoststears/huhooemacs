@@ -1,0 +1,1 @@
+fputc_unlocked(<field "int C">, <field "FILE *STREAM">)<endpoint>

@@ -1,0 +1,1 @@
+localtime_r(<field "const time_t *TIME">, <field "struct tm *RESULTP">)<endpoint>

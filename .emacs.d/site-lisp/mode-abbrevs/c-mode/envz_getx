@@ -1,0 +1,1 @@
+envz_get(<field "const char *ENVZ">, <field "size_t ENVZ_LEN">, <field "const char *NAME">)<endpoint>

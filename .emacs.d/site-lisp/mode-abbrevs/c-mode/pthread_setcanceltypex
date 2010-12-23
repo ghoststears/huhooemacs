@@ -1,0 +1,1 @@
+pthread_setcanceltype(<field "int TYPE">, <field "int *OLDTYPE">)<endpoint>

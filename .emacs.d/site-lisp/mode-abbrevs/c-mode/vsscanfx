@@ -1,0 +1,1 @@
+vsscanf(<field "const char *S">, <field "const char *TEMPLATE">, <field "va_list AP">)<endpoint>

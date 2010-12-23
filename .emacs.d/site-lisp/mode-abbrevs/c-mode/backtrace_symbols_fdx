@@ -1,0 +1,1 @@
+backtrace_symbols_fd(<field "void *const *BUFFER">, <field "int SIZE">, <field "int FD">)<endpoint>

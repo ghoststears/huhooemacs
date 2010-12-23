@@ -1,0 +1,1 @@
+envz_merge(<field "char **ENVZ">, <field "size_t *ENVZ_LEN">, <field "const char *ENVZ2">, <field "size_t ENVZ2_LEN">, <field "int OVERRIDE">)<endpoint>

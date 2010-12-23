@@ -1,0 +1,1 @@
+CPU_ISSET(<field "int CPU">, <field "const cpu_set_t *SET">)<endpoint>

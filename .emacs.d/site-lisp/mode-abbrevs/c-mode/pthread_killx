@@ -1,0 +1,1 @@
+pthread_kill(<field "pthread_t THREAD">, <field "int SIGNO">)<endpoint>

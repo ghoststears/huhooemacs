@@ -1,0 +1,1 @@
+ttyname_r(<field "int FILEDES">, <field "char *BUF">, <field "size_t LEN">)<endpoint>

@@ -1,0 +1,1 @@
+getpwent_r(<field "struct passwd *RESULT_BUF">, <field "char *BUFFER">, <field "int BUFLEN">, <field "struct passwd **RESULT">)<endpoint>

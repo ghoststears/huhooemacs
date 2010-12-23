@@ -1,0 +1,1 @@
+initstate_r(<field "unsigned int SEED">, <field "char *restrict STATEBUF">, <field "size_t STATELEN">, <field "struct random_data *restrict BUF">)<endpoint>

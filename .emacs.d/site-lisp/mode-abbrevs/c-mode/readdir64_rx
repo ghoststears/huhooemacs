@@ -1,0 +1,1 @@
+readdir64_r(<field "DIR *DIRSTREAM">, <field "struct dirent64 *ENTRY">, <field "struct dirent64 **RESULT">)<endpoint>

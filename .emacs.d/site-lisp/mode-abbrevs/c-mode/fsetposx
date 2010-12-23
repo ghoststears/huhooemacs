@@ -1,0 +1,1 @@
+fsetpos(<field "FILE *STREAM">, <field "const fpos_t *POSITION">)<endpoint>

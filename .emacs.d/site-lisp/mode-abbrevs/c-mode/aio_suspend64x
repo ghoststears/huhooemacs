@@ -1,0 +1,1 @@
+aio_suspend64(<field "const struct aiocb64 *const LIST[]">, <field "int NENT">, <field "const struct timespec *TIMEOUT">)<endpoint>

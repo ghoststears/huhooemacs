@@ -1,0 +1,1 @@
+sched_setscheduler(<field "pid_t PID">, <field "int POLICY">, <field "const struct sched_param *PARAM">)<endpoint>

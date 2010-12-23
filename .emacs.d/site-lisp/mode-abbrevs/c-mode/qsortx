@@ -1,0 +1,1 @@
+qsort(<field "void *ARRAY">, <field "size_t COUNT">, <field "size_t SIZE">, <field "comparison_fn_t COMPARE">)<endpoint>

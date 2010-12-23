@@ -1,0 +1,1 @@
+argz_replace(<field "char **ARGZ">, <field "size_t *ARGZ_LEN">, <field "const char *STR">, <field "const char *WITH">, <field "unsigned *REPLACE_COUNT">)<endpoint>

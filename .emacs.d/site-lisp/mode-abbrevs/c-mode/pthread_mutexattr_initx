@@ -1,0 +1,1 @@
+pthread_mutexattr_init(<field "pthread_mutexattr_t *ATTR">)<endpoint>

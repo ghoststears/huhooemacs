@@ -1,0 +1,1 @@
+getpwnam_r(<field "const char *NAME">, <field "struct passwd *RESULT_BUF">, <field "char *BUFFER">, <field "size_t BUFLEN">, <field "struct passwd **RESULT">)<endpoint>

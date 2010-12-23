@@ -1,0 +1,1 @@
+parse_printf_format(<field "const char *TEMPLATE">, <field "size_t N">, <field "int *ARGTYPES">)<endpoint>

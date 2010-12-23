@@ -1,0 +1,1 @@
+pthread_mutexattr_destroy(<field "pthread_mutexattr_t *ATTR">)<endpoint>

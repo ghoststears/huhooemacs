@@ -1,0 +1,1 @@
+pthread_mutex_lock(<field "pthread_mutex_t *mutex">)<endpoint>

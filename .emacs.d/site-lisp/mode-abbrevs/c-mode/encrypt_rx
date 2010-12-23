@@ -1,0 +1,1 @@
+encrypt_r(<field "char *BLOCK">, <field "int EDFLAG">, <field "struct crypt_data * DATA">)<endpoint>

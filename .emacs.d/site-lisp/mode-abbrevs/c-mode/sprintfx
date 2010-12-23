@@ -1,0 +1,1 @@
+sprintf(<field "char *S">, <field "const char *TEMPLATE">, <field "...">)<endpoint>

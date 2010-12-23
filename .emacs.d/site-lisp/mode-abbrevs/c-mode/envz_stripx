@@ -1,0 +1,1 @@
+envz_strip(<field "char **ENVZ">, <field "size_t *ENVZ_LEN">)<endpoint>

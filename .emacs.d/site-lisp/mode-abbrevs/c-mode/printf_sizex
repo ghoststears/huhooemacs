@@ -1,0 +1,1 @@
+printf_size(<field "FILE *FP">, <field "const struct printf_info *INFO">, <field "const void *const *ARGS">)<endpoint>

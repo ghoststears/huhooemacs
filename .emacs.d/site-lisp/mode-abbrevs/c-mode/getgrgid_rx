@@ -1,0 +1,1 @@
+getgrgid_r(<field "gid_t GID">, <field "struct group *RESULT_BUF">, <field "char *BUFFER">, <field "size_t BUFLEN">, <field "struct group **RESULT">)<endpoint>

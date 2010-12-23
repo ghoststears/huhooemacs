@@ -1,0 +1,1 @@
+inet_makeaddr(<field "uint32_t NET">, <field "uint32_t LOCAL">)<endpoint>

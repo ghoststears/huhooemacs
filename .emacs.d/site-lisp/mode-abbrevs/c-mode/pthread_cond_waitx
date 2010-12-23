@@ -1,0 +1,1 @@
+pthread_cond_wait(<field "pthread_cond_t *COND">, <field "pthread_mutex_t *MUTEX">)<endpoint>

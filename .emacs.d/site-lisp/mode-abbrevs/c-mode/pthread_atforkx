@@ -1,0 +1,1 @@
+pthread_atfork(<field "void(">, <field "*PREPARE">, <field ")(">, <field "VOID">, <field ")">, <field "void(">, <field "*PARENT">, <field ")(">, <field "VOID">, <field ")">, <field "void(">, <field "*CHILD">, <field ")(">, <field "VOID">, <field ")">)<endpoint>

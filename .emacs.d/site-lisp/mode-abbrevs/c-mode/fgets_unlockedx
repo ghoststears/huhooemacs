@@ -1,0 +1,1 @@
+fgets_unlocked(<field "char *S">, <field "int COUNT">, <field "FILE *STREAM">)<endpoint>

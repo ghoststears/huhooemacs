@@ -1,0 +1,1 @@
+sem_init(<field "sem_t *SEM">, <field "int PSHARED">, <field "unsigned int VALUE">)<endpoint>

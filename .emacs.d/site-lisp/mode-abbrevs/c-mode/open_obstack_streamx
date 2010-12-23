@@ -1,0 +1,1 @@
+open_obstack_stream(<field "struct obstack *OBSTACK">)<endpoint>

@@ -1,0 +1,1 @@
+pthread_once(<field "pthread_once_t *once_CONTROL">, <field "void(">, <field "*INIT_ROUTINE">, <field ")(">, <field "VOID">, <field ")">)<endpoint>

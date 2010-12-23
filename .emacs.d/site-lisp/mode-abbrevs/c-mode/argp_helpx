@@ -1,0 +1,1 @@
+argp_help(<field "const struct argp *ARGP">, <field "FILE *STREAM">, <field "unsigned FLAGS">, <field "char *NAME">)<endpoint>

@@ -1,0 +1,1 @@
+pthread_key_delete(<field "pthread_key_t KEY">)<endpoint>

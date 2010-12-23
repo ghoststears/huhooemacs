@@ -1,0 +1,1 @@
+aio_cancel(<field "int FILDES">, <field "struct aiocb *AIOCBP">)<endpoint>

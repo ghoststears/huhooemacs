@@ -1,0 +1,1 @@
+setbuf(<field "FILE *STREAM">, <field "char *BUF">)<endpoint>

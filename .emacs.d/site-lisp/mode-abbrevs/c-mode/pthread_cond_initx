@@ -1,0 +1,1 @@
+pthread_cond_init(<field "pthread_cond_t *COND">, <field "pthread_condattr_t *cond_ATTR">)<endpoint>

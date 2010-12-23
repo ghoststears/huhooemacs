@@ -1,0 +1,1 @@
+srand48_r(<field "long int SEEDVAL">, <field "struct drand48_data *BUFFER">)<endpoint>

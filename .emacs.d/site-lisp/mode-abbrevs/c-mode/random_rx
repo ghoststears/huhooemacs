@@ -1,0 +1,1 @@
+random_r(<field "struct random_data *restrict BUF">, <field "int32_t *restrict RESULT">)<endpoint>

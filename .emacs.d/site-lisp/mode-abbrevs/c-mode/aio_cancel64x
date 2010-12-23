@@ -1,0 +1,1 @@
+aio_cancel64(<field "int FILDES">, <field "struct aiocb64 *AIOCBP">)<endpoint>

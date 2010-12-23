@@ -1,0 +1,1 @@
+erand48_r(<field "unsigned short int XSUBI[3]">, <field "struct drand48_data *BUFFER">, <field "double *RESULT">)<endpoint>

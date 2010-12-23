@@ -1,0 +1,1 @@
+gethostbyname_r(<field "const char *restrict NAME">, <field "struct hostent *restrict RESULT_BUF">, <field "char *restrict BUF">, <field "size_t BUFLEN">, <field "struct hostent **restrict RESULT">, <field "int *restrict H_ERRNOP">)<endpoint>

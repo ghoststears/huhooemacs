@@ -1,0 +1,1 @@
+pthread_equal(<field "pthread_t thread1">, <field "pthread_t thread2">)<endpoint>

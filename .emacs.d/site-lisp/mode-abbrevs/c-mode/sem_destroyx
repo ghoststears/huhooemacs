@@ -1,0 +1,1 @@
+sem_destroy(<field "sem_t * SEM">)<endpoint>

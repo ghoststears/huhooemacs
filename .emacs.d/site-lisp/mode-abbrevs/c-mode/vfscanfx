@@ -1,0 +1,1 @@
+vfscanf(<field "FILE *STREAM">, <field "const char *TEMPLATE">, <field "va_list AP">)<endpoint>

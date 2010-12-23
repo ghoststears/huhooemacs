@@ -1,0 +1,1 @@
+strspn(<field "const char *STRING">, <field "const char *SKIPSET">)<endpoint>

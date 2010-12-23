@@ -1,0 +1,1 @@
+getgrent_r(<field "struct group *RESULT_BUF">, <field "char *BUFFER">, <field "size_t BUFLEN">, <field "struct group **RESULT">)<endpoint>

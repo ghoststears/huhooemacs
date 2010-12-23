@@ -1,0 +1,1 @@
+pthread_getschedparam(<field "pthread_t target_THREAD">, <field "int *POLICY">, <field "struct sched_param *PARAM">)<endpoint>

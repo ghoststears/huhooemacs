@@ -1,0 +1,1 @@
+crypt_r(<field "const char *KEY">, <field "const char *SALT">, <field "struct crypt_data * DATA">)<endpoint>

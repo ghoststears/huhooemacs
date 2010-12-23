@@ -1,0 +1,1 @@
+srandom_r(<field "unsigned int SEED">, <field "struct random_data *BUF">)<endpoint>

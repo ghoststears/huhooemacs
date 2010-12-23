@@ -1,0 +1,1 @@
+obstack_copy0(<field "struct obstack *OBSTACK-PTR">, <field "void *ADDRESS">, <field "int SIZE">)<endpoint>

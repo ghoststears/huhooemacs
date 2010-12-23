@@ -1,0 +1,1 @@
+fputc(<field "int C">, <field "FILE *STREAM">)<endpoint>

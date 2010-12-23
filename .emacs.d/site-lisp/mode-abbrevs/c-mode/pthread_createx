@@ -1,0 +1,1 @@
+pthread_create(<field "pthread_t * THREAD">, <field "pthread_attr_t * ATTR">, <field "void *(">, <field "*START_ROUTINE">, <field ")(">, <field "VOID">, <field "*">, <field ")">, <field "void * ARG">)<endpoint>

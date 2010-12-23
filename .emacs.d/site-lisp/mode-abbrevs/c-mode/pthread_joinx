@@ -1,0 +1,1 @@
+pthread_join(<field "pthread_t TH">, <field "void **thread_RETURN">)<endpoint>

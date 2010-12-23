@@ -1,0 +1,1 @@
+CPU_ZERO(<field "cpu_set_t *SET">)<endpoint>

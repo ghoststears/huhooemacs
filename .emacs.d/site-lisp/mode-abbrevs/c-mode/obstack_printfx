@@ -1,0 +1,1 @@
+obstack_printf(<field "struct obstack *OBSTACK">, <field "const char *TEMPLATE">, <field "...">)<endpoint>

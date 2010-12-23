@@ -1,0 +1,1 @@
+pthread_setspecific(<field "pthread_key_t KEY">, <field "const void *POINTER">)<endpoint>

@@ -1,0 +1,1 @@
+setstate_r(<field "char *restrict STATEBUF">, <field "struct random_data *restrict BUF">)<endpoint>

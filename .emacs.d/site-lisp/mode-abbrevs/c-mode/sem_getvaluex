@@ -1,0 +1,1 @@
+sem_getvalue(<field "sem_t * SEM">, <field "int * SVAL">)<endpoint>

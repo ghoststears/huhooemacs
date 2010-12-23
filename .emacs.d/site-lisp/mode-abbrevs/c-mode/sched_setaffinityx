@@ -1,0 +1,1 @@
+sched_setaffinity(<field "pid_t PID">, <field "size_t CPUSETSIZE">, <field "const cpu_set_t *CPUSET">)<endpoint>

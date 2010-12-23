@@ -1,0 +1,1 @@
+fgetgrent_r(<field "FILE *STREAM">, <field "struct group *RESULT_BUF">, <field "char *BUFFER">, <field "size_t BUFLEN">, <field "struct group **RESULT">)<endpoint>

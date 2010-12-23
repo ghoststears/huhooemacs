@@ -1,0 +1,1 @@
+strtok(<field "char *restrict NEWSTRING">, <field "const char *restrict DELIMITERS">)<endpoint>

@@ -1,0 +1,1 @@
+sched_getscheduler(<field "pid_t PID">)<endpoint>

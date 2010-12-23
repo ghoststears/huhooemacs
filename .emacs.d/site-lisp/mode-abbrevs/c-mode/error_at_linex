@@ -1,0 +1,1 @@
+error_at_line(<field "int STATUS">, <field "int ERRNUM">, <field "const char *FNAME">, <field "unsigned int LINENO">, <field "const char *FORMAT">, <field "...">)<endpoint>

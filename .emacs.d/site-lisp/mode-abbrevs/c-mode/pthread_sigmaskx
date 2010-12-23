@@ -1,0 +1,1 @@
+pthread_sigmask(<field "int HOW">, <field "const sigset_t *NEWMASK">, <field "sigset_t *OLDMASK">)<endpoint>

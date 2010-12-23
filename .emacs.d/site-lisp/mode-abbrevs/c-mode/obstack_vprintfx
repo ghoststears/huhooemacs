@@ -1,0 +1,1 @@
+obstack_vprintf(<field "struct obstack *OBSTACK">, <field "const char *TEMPLATE">, <field "va_list AP">)<endpoint>

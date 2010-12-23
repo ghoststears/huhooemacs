@@ -1,0 +1,1 @@
+lgamma_r(<field "double X">, <field "int *SIGNP">)<endpoint>

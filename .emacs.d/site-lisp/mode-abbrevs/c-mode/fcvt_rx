@@ -1,0 +1,1 @@
+fcvt_r(<field "double VALUE">, <field "int NDIGIT">, <field "int *DECPT">, <field "int *NEG">, <field "char *BUF">, <field "size_t LEN">)<endpoint>

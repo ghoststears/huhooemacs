@@ -1,0 +1,1 @@
+wcstombs(<field "char *STRING">, <field "const wchar_t *WSTRING">, <field "size_t SIZE">)<endpoint>

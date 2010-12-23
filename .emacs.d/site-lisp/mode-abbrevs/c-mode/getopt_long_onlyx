@@ -1,0 +1,1 @@
+getopt_long_only(<field "int ARGC">, <field "char *const *ARGV">, <field "const char *SHORTOPTS">, <field "const struct option *LONGOPTS">, <field "int *INDEXPTR">)<endpoint>

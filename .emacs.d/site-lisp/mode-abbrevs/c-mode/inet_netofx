@@ -1,0 +1,1 @@
+inet_netof(<field "struct in_addr ADDR">)<endpoint>

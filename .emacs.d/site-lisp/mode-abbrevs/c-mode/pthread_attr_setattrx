@@ -1,0 +1,1 @@
+pthread_attr_setattr(<field "pthread_attr_t *OBJ">, <field "int VALUE">)<endpoint>

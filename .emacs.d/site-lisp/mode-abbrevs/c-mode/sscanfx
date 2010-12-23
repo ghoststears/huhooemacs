@@ -1,0 +1,1 @@
+sscanf(<field "const char *S">, <field "const char *TEMPLATE">, <field "...">)<endpoint>

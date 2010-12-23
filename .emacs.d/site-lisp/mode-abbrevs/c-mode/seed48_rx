@@ -1,0 +1,1 @@
+seed48_r(<field "unsigned short int SEED16V[3]">, <field "struct drand48_data *BUFFER">)<endpoint>

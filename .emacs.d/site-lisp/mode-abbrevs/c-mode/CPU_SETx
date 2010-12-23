@@ -1,0 +1,1 @@
+CPU_SET(<field "int CPU">, <field "cpu_set_t *SET">)<endpoint>

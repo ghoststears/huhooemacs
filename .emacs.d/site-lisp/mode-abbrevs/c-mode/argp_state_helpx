@@ -1,0 +1,1 @@
+argp_state_help(<field "const struct argp_state *STATE">, <field "FILE *STREAM">, <field "unsigned FLAGS">)<endpoint>

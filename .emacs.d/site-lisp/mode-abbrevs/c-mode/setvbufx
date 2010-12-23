@@ -1,0 +1,1 @@
+setvbuf(<field "FILE *STREAM">, <field "char *BUF">, <field "int MODE">, <field "size_t SIZE">)<endpoint>

@@ -1,0 +1,1 @@
+memmove(<field "void *TO">, <field "const void *FROM">, <field "size_t SIZE">)<endpoint>

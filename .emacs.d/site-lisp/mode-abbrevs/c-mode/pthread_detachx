@@ -1,0 +1,1 @@
+pthread_detach(<field "pthread_t TH">)<endpoint>

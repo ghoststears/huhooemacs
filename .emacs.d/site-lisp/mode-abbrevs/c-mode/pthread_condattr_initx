@@ -1,0 +1,1 @@
+pthread_condattr_init(<field "pthread_condattr_t *ATTR">)<endpoint>

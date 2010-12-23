@@ -1,0 +1,1 @@
+inet_ntop(<field "int AF">, <field "const void *CP">, <field "char *BUF">, <field "size_t LEN">)<endpoint>

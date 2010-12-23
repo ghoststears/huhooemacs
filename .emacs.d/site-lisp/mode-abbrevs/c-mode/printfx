@@ -1,0 +1,1 @@
+printf(<field "const char *TEMPLATE">, <field "...">)<endpoint>

@@ -1,0 +1,1 @@
+fseek(<field "FILE *STREAM">, <field "long int OFFSET">, <field "int WHENCE">)<endpoint>

@@ -1,0 +1,1 @@
+pthread_mutexattr_gettype(<field "const pthread_mutexattr_t *ATTR">, <field "int *TYPE">)<endpoint>

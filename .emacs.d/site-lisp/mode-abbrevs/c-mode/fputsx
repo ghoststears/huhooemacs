@@ -1,0 +1,1 @@
+fputs(<field "const char *S">, <field "FILE *STREAM">)<endpoint>

@@ -1,0 +1,1 @@
+getpwuid_r(<field "uid_t UID">, <field "struct passwd *RESULT_BUF">, <field "char *BUFFER">, <field "size_t BUFLEN">, <field "struct passwd **RESULT">)<endpoint>

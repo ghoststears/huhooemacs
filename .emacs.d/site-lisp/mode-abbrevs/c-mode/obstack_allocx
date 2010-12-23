@@ -1,0 +1,1 @@
+obstack_alloc(<field "struct obstack *OBSTACK-PTR">, <field "int SIZE">)<endpoint>

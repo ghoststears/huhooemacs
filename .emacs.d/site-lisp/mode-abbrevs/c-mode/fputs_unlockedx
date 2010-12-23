@@ -1,0 +1,1 @@
+fputs_unlocked(<field "const char *S">, <field "FILE *STREAM">)<endpoint>

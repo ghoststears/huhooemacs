@@ -1,0 +1,1 @@
+lrand48_r(<field "struct drand48_data *BUFFER">, <field "double *RESULT">)<endpoint>

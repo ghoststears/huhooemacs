@@ -1,0 +1,1 @@
+mbtowc(<field "wchar_t *restrict RESULT">, <field "const char *restrict STRING">, <field "size_t SIZE">)<endpoint>

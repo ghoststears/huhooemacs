@@ -1,0 +1,1 @@
+fread_unlocked(<field "void *DATA">, <field "size_t SIZE">, <field "size_t COUNT">, <field "FILE *STREAM">)<endpoint>

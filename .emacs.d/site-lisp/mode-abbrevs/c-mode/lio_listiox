@@ -1,0 +1,1 @@
+lio_listio(<field "int MODE">, <field "struct aiocb *const LIST[]">, <field "int NENT">, <field "struct sigevent *SIG">)<endpoint>

@@ -1,0 +1,1 @@
+fputwc_unlocked(<field "wint_t WC">, <field "FILE *STREAM">)<endpoint>

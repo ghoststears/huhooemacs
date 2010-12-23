@@ -1,0 +1,1 @@
+register_printf_function(<field "int SPEC">, <field "printf_function HANDLER-FUNCTION">, <field "printf_arginfo_function ARGINFO-FUNCTION">)<endpoint>

@@ -1,0 +1,1 @@
+accept(<field "int SOCKET">, <field "struct sockaddr *ADDR">, <field "socklen_t *LENGTH_PTR">)<endpoint>

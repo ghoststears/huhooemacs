@@ -1,0 +1,1 @@
+obstack_blank_fast(<field "struct obstack *OBSTACK-PTR">, <field "int SIZE">)<endpoint>

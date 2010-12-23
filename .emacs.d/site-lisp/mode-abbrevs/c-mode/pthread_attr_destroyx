@@ -1,0 +1,1 @@
+pthread_attr_destroy(<field "pthread_attr_t *ATTR">)<endpoint>
