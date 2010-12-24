@@ -14,6 +14,10 @@
 ;; 设置默认工作目录
 ;; (setq default-directory "~/work/")
 
+;; eval-after-load
+;; http://emacser.com/eval-after-load.htm
+(require 'eval-after-load)
+
 ;; ido
 (require 'ido)
 (ido-mode t)
@@ -234,6 +238,9 @@
 
 ;; ECB
 (require 'ecb-settings)
+
+;; c/cpp settings
+;; (require 'c-settings)
 
 ;;------------------------------------------------------------------------------
 ;; CMake
