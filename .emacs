@@ -250,6 +250,9 @@
 ;; auto complete
 (load "auto-complete-settings")
 
+;; templates
+(require 'template-settings)
+
 ;; auto inster 
 (require 'auto-insert-settings)
 
