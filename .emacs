@@ -301,11 +301,9 @@
       (append '(("CMakeLists\\.txt\\'" . cmake-mode)
                 ("\\.cmake\\'" . cmake-mode))
                 auto-mode-alist))
-;;------------------------------------------------------------------------------
-;; MySQL
-;;------------------------------------------------------------------------------
-;; (require 'mysql)
-;; (setq sql-mysql-options '("-C" "-t" "-f" "-n"))
+
+;; SQL for MySQL
+(load "sql-settings")
 
 ;; font settings
 (load "font-settings")
