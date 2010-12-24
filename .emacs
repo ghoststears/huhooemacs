@@ -365,12 +365,5 @@
 ;;------------------------------------------------------------------------------
 
 ;; color theme
-;; (add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme-6.6.0")
-(require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-initialize)
-     (color-theme-arjen)))
-(color-theme-dark-blue)
-;(color-theme-gnome2)
+(load "color-theme-settings")
 
