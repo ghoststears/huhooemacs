@@ -166,6 +166,11 @@
 
 (setq mouse-yank-at-point t)
 
+;; use space to table
+(setq-default indent-tabs-mode nil)
+
+;; default table width
+(setq default-tab-width 4)
 
 ;; goto line
 (global-set-key [(control c) (control g)] 'goto-line)
@@ -201,45 +206,13 @@
   (find-file (concat "~/" ".emacs")))
 (global-set-key (kbd "C-x E") 'visit-.emacs)
 
-
 (setq auto-mode-alist (cons '("\\.lua$" . lua-mode) auto-mode-alist))
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
-
 
 ;;------------------------------------------------------------------------------
 ;; artist-mode
 ;;------------------------------------------------------------------------------
 (autoload 'artist-mode "artist" "Enter artist-mode" t)
-
-;;-----------------------------------------------------------------------------
-;; table setting.
-;;-----------------------------------------------------------------------------
-
-;; 默认不用空格替代TAB
-(setq-default indent-tabs-mode nil)
-
-;; 设置TAB默认的宽度
-(setq default-tab-width 4)
-
-;; 设置用空格替代TAB的模式
-;; (dolist (hook (list
-;;                'emacs-lisp-mode-hook
-;;                'lisp-mode-hook
-;;                'lisp-interaction-mode-hook
-;;                'scheme-mode-hook
-;;                'c-mode-hook
-;;                'c++-mode-hook
-;;                'java-mode-hook
-;;                'haskell-mode-hook
-;;                'asm-mode-hook
-;;                'emms-tag-editor-mode-hook
-;;                'sh-mode-hook
-;;                ))
-;;   (add-hook hook '(lambda () (setq indent-tabs-mode nil))))
-;;-----------------------------------------------------------------------------
-;; table setting.
-;;-----------------------------------------------------------------------------
-
 
 ;; browse kill ring setting.
 (require 'browse-kill-ring-settings)
