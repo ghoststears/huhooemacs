@@ -1,6 +1,10 @@
 ;; MySQL settings
-
+;;
 ;; mysql
-;;(add-to-list 'load-path "~/site-lisp")
+;;
+;; usage:
+;;    M-x sql-mysql
+;;
+
 (require 'mysql)
 (setq sql-mysql-options '("-C" "-t" "-f" "-n"))

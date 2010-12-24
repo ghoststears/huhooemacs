@@ -4,6 +4,7 @@
 
 (require 'maxframe)
 (add-hook 'window-setup-hook 'maximize-frame t)
+
 ;; (defun toggle-fullscreen (&optional f)
 ;;   "Toggle frame F fullscreen."
 ;;   (interactive)
@@ -103,3 +104,4 @@
 ;; (add-hook 'window-setup-hook 'maximize-frame t)
 
 (provide 'maxframe-settings)
+

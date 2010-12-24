@@ -1,8 +1,24 @@
-(add-to-list 'load-path "~/.emacs.d/site-lisp/")
-(add-to-list 'load-path "~/.emacs.d/setting/")
+(defconst my-emacs-path              "~/.emacs.d/" "my emacs config file path")
+(defconst my-emacs-my-lisps-path     (concat my-emacs-path "my-lisp/") "my lisp package")
+(defconst my-emacs-vendor-lisps-path (concat my-emacs-path "site-lisp/") "the vendor lisp package")
+(defconst my-emacs-settings-path     (concat my-emacs-path "setting/") "my self emacs setting")
+(defconst my-emacs-templates-path    (concat my-emacs-path "templates/") "my templates")
+
+;; add all subdir of 'my-emacs-path' to 'load-path'
+(load (concat my-emacs-my-lisps-path "my-subdirs"))
+(my-add-subdirs-to-load-path my-emacs-vendor-lisps-path)
+(my-add-subdirs-to-load-path my-emacs-my-lisps-path)
+(my-add-subdirs-to-load-path my-emacs-settings-path)
+
+(require 'maxframe)
+(add-hook 'window-setup-hook 'maximize-frame t)
+
+;; maxframe
+;; (require 'maxframe-setings)
+
 
 ;; 设置默认工作目录
-(setq default-directory "~/work/")
+;; (setq default-directory "~/work/")
 
 ;; ido
 (require 'ido)
@@ -17,7 +33,7 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers (or Gnus mail buffers)
 
 ;; 去掉工具栏
-(tool-bar-mode nil)
+;; (tool-bar-mode nil)
 
 ;; 去掉菜单栏
 ;(menu-bar-mode nil)
@@ -260,7 +276,6 @@
 ;;-----------------------------------------------------------------------------
 
 ;; auto complete
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
 (require 'auto-complete)
 (global-auto-complete-mode t)
 (define-key ac-complete-mode-map "\C-n" 'ac-next)
@@ -273,18 +288,18 @@
 (yas/load-directory "~/.emacs.d/site-lisp/yasnippet-0.6.1c/snippets")
 
 
-(load-file "~/.emacs.d/site-lisp/cedet-1.0/common/cedet.el")
-(global-ede-mode 1)                      ; Enable the Project management system
-(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
-(global-srecode-minor-mode 1)            ; Enable template insertion menu
+;; (load-file "~/.emacs.d/site-lisp/cedet-1.0/common/cedet.el")
+;; (global-ede-mode 1)                      ; Enable the Project management system
+;; (semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
+;; (global-srecode-minor-mode 1)            ; Enable template insertion menu
 
 
 ;;------------------------------------------------------------------------------
 ;; ECB
 ;;------------------------------------------------------------------------------
-(add-to-list 'load-path "~/.emacs.d/site-lisp/ecb-2.40/")
-;(load-file "/path/to/ecb/ecb.el")
-(require 'ecb-autoloads)
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/ecb-2.40/")
+;; ;(load-file "/path/to/ecb/ecb.el")
+;; (require 'ecb-autoloads)
 
 ;; (add-hook 'ecb-deactivate-hook
 ;;       (lambda () (modify-all-frames-parameters '((width . 80)))))
@@ -304,8 +319,8 @@
 ;;------------------------------------------------------------------------------
 ;; MySQL
 ;;------------------------------------------------------------------------------
-(require 'mysql)
-(setq sql-mysql-options '("-C" "-t" "-f" "-n"))
+;; (require 'mysql)
+;; (setq sql-mysql-options '("-C" "-t" "-f" "-n"))
 
 
 ;;------------------------------------------------------------------------------
@@ -350,7 +365,7 @@
 ;;------------------------------------------------------------------------------
 
 ;; color theme
-(add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme-6.6.0")
+;; (add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme-6.6.0")
 (require 'color-theme)
 (eval-after-load "color-theme"
   '(progn
@@ -359,81 +374,3 @@
 (color-theme-dark-blue)
 ;(color-theme-gnome2)
 
-;;-----------------------------------------------------------------------------
-;; windows 启动最大化
-;;-----------------------------------------------------------------------------
-
-(global-set-key [f11] 'my-fullscreen)
-
-;; 全屏
-(defun my-fullscreen ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(2 "_NET_WM_STATE_FULLSCREEN" 0))
-)
-;最大化
-(defun my-maximized-horz ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
-(defun my-maximized-vert ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
-(defun my-maximized ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
-;; ;; 最大化
-;; (defun my-maximized ()
-;;   (interactive)
-;;   (x-send-client-message
-;;    nil 0 nil "_NET_WM_STATE" 32
-;;    '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
-;;   (x-send-client-message
-;;    nil 0 nil "_NET_WM_STATE" 32
-;;    '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
-;; )
-;; 启动时最大化
-(my-maximized)
-
-;; (defun w32-restore-frame()
-;; "Restore a minimized frame"
-;; (interactive)
-;; (w32-send-sys-command 61728))
-
-;; (defun w32-maximize-frame()
-;; "Maximize the current frame"
-;; (interactive)
-;; (w32-send-sys-command 61488))
-
-;; (w32-maximize-frame)
-
-;; 如果关闭了工具条，则会在最底下出现一条空隙，这时，在注册表里面加上：
-;; [HKEY_LOCAL_MACHINE/SOFTWARE/GNU/EMACS] "EMACS.Toolbar"="0"
-;; 来解决
-
-;;-----------------------------------------------------------------------------
-;; windows 启动最大化
-;;-----------------------------------------------------------------------------
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(ecb-layout-window-sizes (quote (("left8" (0.18781725888324874 . 0.2807017543859649) (0.18781725888324874 . 0.24561403508771928) (0.18781725888324874 . 0.2807017543859649) (0.18781725888324874 . 0.17543859649122806)))))
- '(ecb-options-version "2.40"))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
