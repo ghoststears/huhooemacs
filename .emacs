@@ -31,7 +31,8 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers (or Gnus mail buffers)
 
 ;; 去掉工具栏
-;; (tool-bar-mode nil)
+(if (eq system-type 'gnu/linux)
+    (tool-bar-mode nil))
 
 ;; 去掉菜单栏
 ;(menu-bar-mode nil)
