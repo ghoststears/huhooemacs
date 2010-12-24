@@ -270,19 +270,14 @@
 ;; browse kill ring setting end.
 ;;-----------------------------------------------------------------------------
 
+;; yasnippet
+(load "yasnippet-settings")
+
 ;; auto complete
 (load "auto-complete-settings")
 
 ;; cedet 
 (load "cedet-settings")
-
-;; yasnippet
-(add-to-list 'load-path "~/.emacs.d/site-lisp/yasnippet-0.6.1c")
-(require 'yasnippet) 
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/site-lisp/yasnippet-0.6.1c/snippets")
-
-
 
 ;;------------------------------------------------------------------------------
 ;; ECB
