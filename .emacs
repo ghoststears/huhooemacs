@@ -276,10 +276,11 @@
 ;;-----------------------------------------------------------------------------
 
 ;; auto complete
-(require 'auto-complete)
-(global-auto-complete-mode t)
-(define-key ac-complete-mode-map "\C-n" 'ac-next)
-(define-key ac-complete-mode-map "\C-p" 'ac-previous)
+(load "auto-complete-settings")
+;; (require 'auto-complete)
+;; (global-auto-complete-mode t)
+;; (define-key ac-complete-mode-map "\C-n" 'ac-next)
+;; (define-key ac-complete-mode-map "\C-p" 'ac-previous)
 
 ;; yasnippet
 (add-to-list 'load-path "~/.emacs.d/site-lisp/yasnippet-0.6.1c")
