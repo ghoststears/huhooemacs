@@ -250,6 +250,9 @@
 ;; auto complete
 (load "auto-complete-settings")
 
+;; auto inster 
+(require 'auto-insert-settings)
+
 ;; cedet 
 (load "cedet-settings")
 
