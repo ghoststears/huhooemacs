@@ -279,19 +279,8 @@
 ;; cedet 
 (load "cedet-settings")
 
-;;------------------------------------------------------------------------------
 ;; ECB
-;;------------------------------------------------------------------------------
-;; (add-to-list 'load-path "~/.emacs.d/site-lisp/ecb-2.40/")
-;; ;(load-file "/path/to/ecb/ecb.el")
-;; (require 'ecb-autoloads)
-
-;; (add-hook 'ecb-deactivate-hook
-;;       (lambda () (modify-all-frames-parameters '((width . 80)))))
-;; ;; resize the ECB window to be default (order matters here)
-;; (add-hook 'ecb-activate-hook (lambda () (ecb-redraw-layout)))
-;; (add-hook 'ecb-activate-hook
-;; 	  (lambda () (modify-all-frames-parameters '((width . 120)))))
+(require 'ecb-settings)
 
 ;;------------------------------------------------------------------------------
 ;; CMake
