@@ -97,7 +97,7 @@
     (semantic      "2.0"           nil       "semantic/doc")
     (srecode       "1.0"           nil       "srecode"     ) 
     (ede           "1.0"           nil       "ede"    	   )    
-    (speedbar      "1.0.3"         nil       "speedbar"    )
+;;    (speedbar      "1.0.3"         nil       "speedbar"    )
     (cogre         "1.0"           nil       "cogre"  	   )
     (cedet-contrib "1.0"           "contrib" nil           )
     )

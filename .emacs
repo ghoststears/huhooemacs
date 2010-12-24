@@ -10,12 +10,6 @@
 (my-add-subdirs-to-load-path my-emacs-my-lisps-path)
 (my-add-subdirs-to-load-path my-emacs-settings-path)
 
-(require 'maxframe)
-(add-hook 'window-setup-hook 'maximize-frame t)
-
-;; maxframe
-;; (require 'maxframe-setings)
-
 
 ;; 设置默认工作目录
 ;; (setq default-directory "~/work/")
@@ -172,6 +166,7 @@
 
 (setq mouse-yank-at-point t)
 
+
 ;; goto line
 (global-set-key [(control c) (control g)] 'goto-line)
 
@@ -179,14 +174,14 @@
 (global-set-key (kbd "C-x M-;") 'uncomment-region)
 
 ;; hide region
-(require 'hide-region)
-(setq hide-region-before-string "+[...")
-(setq hide-region-after-string "]\n")
-(global-set-key (kbd "C-x M-r") 'hide-region-hide)
-(global-set-key (kbd "C-x M-R") 'hide-region-unhide)
+;; (require 'hide-region)
+;; (setq hide-region-before-string "+[...")
+;; (setq hide-region-after-string "]\n")
+;; (global-set-key (kbd "C-x M-r") 'hide-region-hide)
+;; (global-set-key (kbd "C-x M-R") 'hide-region-unhide)
 
 ;; hide lines
-(require 'hide-lines)
+;; (require 'hide-lines)
 
 ;; 启用以下功能
 (put 'narrow-to-region 'disabled nil)
@@ -277,10 +272,9 @@
 
 ;; auto complete
 (load "auto-complete-settings")
-;; (require 'auto-complete)
-;; (global-auto-complete-mode t)
-;; (define-key ac-complete-mode-map "\C-n" 'ac-next)
-;; (define-key ac-complete-mode-map "\C-p" 'ac-previous)
+
+;; cedet 
+(load "cedet-settings")
 
 ;; yasnippet
 (add-to-list 'load-path "~/.emacs.d/site-lisp/yasnippet-0.6.1c")
@@ -288,11 +282,6 @@
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/site-lisp/yasnippet-0.6.1c/snippets")
 
-
-;; (load-file "~/.emacs.d/site-lisp/cedet-1.0/common/cedet.el")
-;; (global-ede-mode 1)                      ; Enable the Project management system
-;; (semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
-;; (global-srecode-minor-mode 1)            ; Enable template insertion menu
 
 
 ;;------------------------------------------------------------------------------
@@ -328,4 +317,10 @@
 
 ;; color theme
 (load "color-theme-settings")
+
+(require 'maxframe)
+(add-hook 'window-setup-hook 'maximize-frame t)
+
+;; maxframe
+;; (require 'maxframe-setings)
 
