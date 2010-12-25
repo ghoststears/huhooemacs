@@ -23,7 +23,8 @@
 (require 'sourcepair-settings)
 
 ;; 改包中定义了C-j 为goto-line, 还设置了c-style
-(require 'kde-emacs-core)
+(require 'kde-emacs)
+;; (require 'kde-emacs-core)
 
 (autoload 'agulbra-make-member "kde-emacs-utils"
   "make a skeleton member function in the .cpp or .cc file" t)

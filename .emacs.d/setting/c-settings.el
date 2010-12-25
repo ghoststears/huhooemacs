@@ -98,6 +98,7 @@
             (overlay-put ov 'c/c++-hightligh-included-files t)
             (overlay-put ov 'keymap c/c++-hightligh-included-files-key-map)
             (overlay-put ov 'face 'underline))))))
+
   ;; 这不是一个好办法，也可以把它加载到c-mode-hook or c++-mode-hook中
   (setq c/c++-hightligh-included-files-timer (run-with-idle-timer 0.5 t 'c/c++-hightligh-included-files))
 

@@ -18,6 +18,9 @@
 ;; http://emacser.com/eval-after-load.htm
 (require 'eval-after-load)
 
+;; ahei-misc for some common function
+(require 'ahei-misc)
+
 ;; ido
 (require 'ido)
 (ido-mode t)
@@ -241,7 +244,7 @@
 (require 'ecb-settings)
 
 ;; c/cpp settings
-;; (require 'c-settings)
+(require 'c-settings)
 
 ;;------------------------------------------------------------------------------
 ;; CMake
