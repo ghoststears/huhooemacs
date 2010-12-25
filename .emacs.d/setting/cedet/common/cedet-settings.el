@@ -8,9 +8,8 @@
 ;; http://emacser.com/install-cedet.htm
 ;; http://emacser.com/cedet.htm
 
-(when mswin
-  (defvar cedet-path (concat my-emacs-lisps-path "cedet") "Path of `cedet'")
-  (my-add-subdirs-to-load-path cedet-path))
+(defvar cedet-path (concat my-emacs-vendor-lisps-path "cedet-1.0") "Path of `cedet'")
+(my-add-subdirs-to-load-path cedet-path)
 
 (require 'cedet)
 (require 'cedet-eieio-settings)

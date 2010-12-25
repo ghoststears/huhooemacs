@@ -23,6 +23,8 @@
 ;; snavigator
 (require 'sn)
 
+(require 'subword)
+
 (eal-define-keys
  `(c-mode-base-map)
  `(("C-h"     c-electric-backspace)
@@ -34,13 +36,14 @@
   "Settings for `cc-mode'."
   (defun c-mode-common-hook-settings ()
     "Settings for `c-mode-common-hook'."
-    (c-basic-offset 4)
+    ;; (c-basic-offset 4)
     (c-set-style "linux")
-    (c-indent-level 4)
+    ;; (c-indent-level 4)
     ;; 饥饿的删除键
     (c-toggle-hungry-state)
     ;; 对subword进行操作，而不是整个word
-    (subword-mode t))
+    (subword-mode t)
+    )
 
   (add-hook 'c-mode-common-hook 'c-mode-common-hook-settings)
 

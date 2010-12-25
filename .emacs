@@ -21,6 +21,8 @@
 ;; ahei-misc for some common function
 (require 'ahei-misc)
 
+(require 'util)
+
 ;; ido
 (require 'ido)
 (ido-mode t)
