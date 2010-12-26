@@ -28,7 +28,7 @@
   "`cedet' settings for `info'."
   (info-initialize)
   (dolist (package `("cogre" "common" "ede" "eieio" "semantic/doc" "speedbar" "srecode"))
-    (add-to-list 'Info-directory-list (concat my-emacs-lisps-path "cedet/" package "/"))))
+    (add-to-list 'Info-directory-list (concat my-emacs-vendor-lisps-path "cedet-1.0/" package "/"))))
 
 (eval-after-load "info"
   `(cedet-settings-4-info))

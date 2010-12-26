@@ -118,3 +118,4 @@ current tag to display information."
   `(cedet-semantic-settings))
 
 (provide 'cedet-semantic-settings)
+
