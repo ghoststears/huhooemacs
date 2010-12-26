@@ -15,7 +15,7 @@
 (defvar last-region-use-cua nil "Last region use CUA mode or not.")
 
 (defconst system-head-file-dir (list "/usr/include" "/usr/local/include" "/usr/include/sys") "系统头文件目录")
-(defconst user-head-file-dir   (list "." "../hdr" "../include") "用户头文件目录")
+(defconst user-head-file-dir   (list "." "../" ) "用户头文件目录")
 
 (defconst is-before-emacs-21 (>= 21 emacs-major-version) "是否是emacs 21或以前的版本")
 (defconst is-after-emacs-23  (<= 23 emacs-major-version) "是否是emacs 23或以后的版本")
