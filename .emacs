@@ -51,6 +51,9 @@
 ;; 显示列号
 (column-number-mode t)
 
+;; buffer title
+(setq frame-title-format "HuHoo@%b");
+
 ;; 不产生备份文件
 (setq make-backup-files nil)
 
