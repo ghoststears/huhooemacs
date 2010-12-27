@@ -35,7 +35,11 @@
 (setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers (or Gnus mail buffers)
 
+;; generic copy
 (require 'generic-copy)
+
+;; org
+(require 'org-settings)
 
 ;; 去掉工具栏
 (if (eq system-type 'gnu/linux)
