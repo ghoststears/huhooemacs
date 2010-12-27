@@ -41,6 +41,9 @@
 ;; org
 (require 'org-settings)
 
+;; alpha-window
+(require 'alpha-window-settings)
+
 ;; 去掉工具栏
 (if (eq system-type 'gnu/linux)
     (tool-bar-mode nil))
