@@ -9,7 +9,7 @@
       ((string-match "^GNU Emacs 23" (emacs-version))
        (let* ()
          (create-fontset-from-fontset-spec
-          "-*-Consolas-normal-r-*-*-12-*-*-*-*-*-fontset-myfont")
+          "-*-Consolas-normal-r-*-*-14-*-*-*-*-*-fontset-myfont")
 
          (set-fontset-font
           "fontset-default" nil
