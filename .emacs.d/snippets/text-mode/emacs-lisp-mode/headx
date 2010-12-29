@@ -10,7 +10,7 @@
 ;; @author      `user-full-name` (`user-mail-address`)
 ;; @date        `(format-time-string "%Y-%m-%d %T")`
 ;;
-;;     Copyright (C) `(format-time-string "%Y")`, `user-full-name`, all rights reserved.
+;;     Copyright (C) `(format-time-string "%Y")` `user-full-name`, all rights reserved.
 ;; 
 ;; ------------------------------------------------------------------------------
 ;;
