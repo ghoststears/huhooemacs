@@ -14,6 +14,9 @@
 ;; 设置默认工作目录
 ;; (setq default-directory "~/work/")
 
+;; user information
+(require 'user-info-settings)
+
 ;; eval-after-load
 ;; http://emacser.com/eval-after-load.htm
 (require 'eval-after-load)
