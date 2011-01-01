@@ -24,6 +24,9 @@
 ;;   `(text-mode-hook)
 ;;   'turn-on-orgstruct)
 
+(defvar org-path (concat my-emacs-vendor-lisps-path "org-7.3") "Path of `org'")
+(my-add-subdirs-to-load-path org-path)
+
 (require 'org-install)
 
 (defun org-settings ()
