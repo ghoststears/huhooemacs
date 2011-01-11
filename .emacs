@@ -24,17 +24,14 @@
 ;; ahei-misc for some common function
 (require 'ahei-misc)
 
+;; util
 (require 'util)
 
 ;; ido
 (require 'ido-settings)
 
 ;; uniquify
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'reverse)
-(setq uniquify-separator "/")
-(setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
-(setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers (or Gnus mail buffers)
+(require 'uniquify-settings)
 
 ;; generic copy
 (require 'generic-copy)
