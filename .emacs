@@ -1,3 +1,19 @@
+;; -*- Emacs-Lisp -*-
+;; -*- coding:utf-8 -*-
+;;
+;; ------------------------------------------------------------------------------
+;;
+;; @file        .emacs
+;; @brief
+;; @author      iHuHoo.W (ihuhoo.w@gmail.com)
+;; @date        2011-01-12 17:09:13
+;;
+;;     Copyright (C) 2011 iHuHoo.W, all rights reserved.
+;; 
+;; ------------------------------------------------------------------------------
+;;
+
+
 (defconst my-emacs-path              "~/.emacs.d/" "my emacs config file path")
 (defconst my-emacs-my-lisps-path     (concat my-emacs-path "my-lisp/") "my lisp package")
 (defconst my-emacs-vendor-lisps-path (concat my-emacs-path "site-lisp/") "the vendor lisp package")
