@@ -58,7 +58,8 @@
   ;; system include path
   (if (or mswin cygwin)
       (dolist (mode '(c-mode c++-mode))
-        (semantic-add-system-include "c:/cygwin/usr/include/" mode))))
+        (semantic-add-system-include "c:/cygwin/usr/include/" mode)))
+)
 
 (defun semantic-decorate-include-settings ()
   "Settings of `semantic-decorate-include'."
