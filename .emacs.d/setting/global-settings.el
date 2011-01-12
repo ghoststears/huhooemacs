@@ -2,6 +2,70 @@
 ;;; 全局通用设置
 ;;;
 
+;; without bool-bar
+(if (eq system-type 'gnu/linux)
+    (tool-bar-mode nil))
+
+;; without menu-bar
+;(menu-bar-mode nil)
+
+;; without scroll-bar
+(set-scroll-bar-mode nil)
+
+;; show line number
+(global-linum-mode t)
+
+;; show col number
+(column-number-mode t)
+
+;; buffer title
+(setq frame-title-format "HuHoo@%b");
+
+;; stop creating those backup~ files 
+(setq make-backup-files nil)
+
+;; stop creating those #auto-save# files
+(setq auto-save-default nil) 
+
+;; none auto-save
+(setq auto-save-mode nil)
+
+;; none bell
+(setq ring-bell-function 'ignore)
+
+;; none startup-message
+(setq inhibit-startup-message t)
+
+;; 禁止在草稿缓存里面显示处始化信息
+(setq initial-scratch-message nil)
+
+;; 支持中键粘贴
+(setq mouse-yank-at-point t)
+
+;; 允许emacs和外部其他程序的粘贴
+(setq x-select-enable-clipboard t)
+
+;; 自动扫描函数名
+(setq imenu-auto-rescan 1)
+
+;; 在状态条上显示当前光标在哪个函数体内部
+(which-function-mode t)
+
+;; 当光标在行尾上下移动的时候，始终保持在行尾。
+(setq track-eol t)
+
+;; 只要一操作鼠标自动闪开
+(mouse-avoidance-mode "banish")
+
+;; 光标在 TAB 字符上会显示为一个大方块
+(setq x-stretch-cursor t)
+
+;; 让选中的区域高亮显示 
+(setq-default transient-mark-mode t)
+
+;; 标记高亮
+(transient-mark-mode 1)
+
 ;; 语法高亮
 (global-font-lock-mode t)
 
@@ -11,74 +75,96 @@
 ;; comment-face
 (set-face-italic-p 'font-lock-comment-face t)
 
-;; 以 y/n代表 yes/no
+;; 设定自动缩进的注释风格
+(setq-default comment-style 'indent)
+
+;; 行尾自动加上一个新行
+(setq require-final-newline t)
+
+;; 用y和n来代替yes和no。
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; 显示列号
-(column-number-mode t)
+;; 打开压缩文件时自动解压缩
+(auto-compression-mode 1)
 
-;; always show line numbers
-(global-linum-mode 1) 
-
-;;; 显示括号匹配
+;; 显示括号匹配
 (show-paren-mode t)
 
-;;; 显示时间，格式如下
+;; 括号匹配显示但不是烦人的跳到另一个括号。
+(setq show-paren-style 'parentheses)
+
+;; 当插入右括号时不显示匹配的左括号
+(setq blink-matching-paren nil)
+
+;; 设置默认地主模式为TEXT模式
+(setq default-major-mode 'text-mode)
+
+;; 自动更新buffer
+(setq auto-revert-mode 1)
+
+;; lisp最大执行深度
+(setq max-lisp-eval-depth 40000)
+
+;; 最大容量
+(setq max-specpdl-size 10000)
+
+;; 用一个很大的 kill ring. 这样防止我不小心删掉重要的东西
+(setq kill-ring-max 1024)
+
+;; 撤销限制
+(setq undo-outer-limit 1024000)
+
+;; 显示字符窗中的换行符为 \n
+(setq print-escape-newlines t)
+
+;; 设置message记录全部消息, 而不用截去
+(setq message-log-max t)
+
+;; 设置 引用字符 的基数
+(setq read-quoted-char-radix 16)
+
+;; 禁止显示鼠标指针
+(setq void-text-area-pointer nil)
+
+;; minibuffer 递归调用命令
+(setq enable-recursive-minibuffers t)
+
+;; 设置执行表达式的长度没有限制
+(setq eval-expression-print-length nil)
+
+;; 设置执行表达式的深度没有限制
+(setq eval-expression-print-level nil)
+
+;; 设置最大的全局标记容量
+(setq global-mark-ring-max 1024)
+
+;; 删除minibuffer的重复历史
+(setq history-delete-duplicates t)
+
+;; 开启变窄区域
+(put 'narrow-to-region 'disabled nil)
+
+;; use space to table
+(setq-default indent-tabs-mode nil)
+
+;; default table width
+(setq default-tab-width 4)
+
+;; 显示时间，格式如下
 (display-time-mode 1)
 (setq display-time-24hr-format t)
 (setq display-time-day-and-date t)
 
-;; 支持中键粘贴
-(setq mouse-yank-at-point t)
-
-;; 支持 emacs 和外部程序的粘贴
-(setq x-select-enable-clipboard t)
-
 ;; 设置默认窗口分割为垂直分割
 (setq split-width-threshold 1)
 
-;; 设置 Tab 宽度为 4
-(setq default-tab-width 4)
-
 ;; 支持图片
 (auto-image-file-mode t)
-
-;; stop creating those backup~ files 
-(setq make-backup-files nil)
-
-;; stop creating those #autosave# files 
-(setq auto-save-default nil)
 
 ;; 解决emacs shell 乱码
 (setq ansi-color-for-comint-mode t)
 (customize-group 'ansi-colors)
 (kill-this-buffer);关闭customize窗口
-
-;; 去掉那个大大的工具栏
-(tool-bar-mode nil)
-
-(global-set-key [f11] 'my-fullscreen)
-
-;; 全屏
-(defun my-fullscreen ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(2 "_NET_WM_STATE_FULLSCREEN" 0))
-)
-
-;; 最大化
-(defun my-maximized ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
-)
-;; 启动时最大化
-(my-maximized)
 
 ;; 新建一行，不管光标在哪
 (defun zl-newline nil
@@ -103,114 +189,6 @@
 ;;; 绑定 Ctrl + Shift + 回车，为新建一行(当前光标之上)
 (global-set-key [C-S-return] 'zl-newline-up)
 
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'forward)
+(provide 'global-settings)
 
-(require 'ido)
-(ido-mode t)
-
-;; ;;; 设置字体
-;; (setq w32-charset-info-alist
-;;     (cons '("gbk" w32-charset-gb2312 . 936) w32-charset-info-alist))
-
-;; (setq default-frame-alist
-;;       (append
-;;        '((font . "fontset-gbk")) default-frame-alist))
-
-;; (create-fontset-from-fontset-spec
-;;  (concat
-;;   "-outline-Courier New-normal-r-normal-normal-13-97-96-96-c-*-fontset-gbk,"
-;;   "chinese-gb2312:-outline-新宋体-normal-r-normal-*-14-*-96-96-c-*-iso10646-1,"
-;;   "mule-unicode-0100-24ff:-*-新宋体-normal-r-*-*-14-*-96-96-c-*-iso10646-1,"
-;;   "chinese-cns11643-5:-*-新宋体-normal-r-normal-*-14-*-96-96-c-*-iso10646-1,"
-;;   "chinese-cns11643-6:-*-新宋体-normal-r-normal-*-14-*-96-96-c-*-iso10646-1,"
-;;   "chinese-cns11643-7:-*-新宋体-normal-r-normal-*-14-*-96-96-c-*-iso10646-1"))
-;; (set-default-font "fontset-gbk")
-
-(prefer-coding-system 'utf-8)
-
-;(setq w32-get-true-file-attributes nil)
-;; (cond ((string-match "^GNU Emacs 22" (emacs-version))
-;;        (let* ()
-;;          (create-fontset-from-fontset-spec
-;;           "-outline-Courier New-normal-r-*-*-12-*-*-*-*-*-fontset-myfont,
-;;            chinese-iso-8bit:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1,
-;;            chinese-gb2312:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1,
-;;            chinese-big5-1:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1,
-;;            chinese-big5-2:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1,
-;;            chinese-cns11643-5:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1,
-;;            chinese-cns11643-6:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1,
-;;            chinese-cns11643-7:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1, 
-;;            japanese-jisx0208-1978:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1, 
-;;            japanese-jisx0208:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1, 
-;;            japanese-jisx0212:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1, 
-;;            japanese-jisx0213-1:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1, 
-;;            japanese-jisx0213-2:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1, 
-;;            korean-ksc5601:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1, 
-;;            mule-unicode-0100-24ff:-*-simsun-*-r-normal-*-12-*-*-*-*-*-iso10646-1")))
-
-;;        ((string-match "^GNU Emacs 23" (emacs-version))
-;;        (let* ()
-;;          (create-fontset-from-fontset-spec
-;;           "-*-Consolas-normal-r-*-*-14-*-*-*-*-*-fontset-myfont")
-;;          (set-fontset-font
-;;           "fontset-default" nil
-;;           "-*-NSimSun-*-*-*-*-*-*-*-*-*-*-iso10646-1" nil 'prepend) ;;所有其他的字符集
-;;           ;;"-*-NSimSun-*-*-*-*-12-*-*-*-*-*-iso10646-1" nil 'prepend) ;;所有其他的字符集
-;;          (set-fontset-font
-;;           "fontset-myfont" 'kana
-;;           "-*-NSimSun-*-*-*-*-*-*-*-*-*-*-iso10646-1" nil 'prepend)
-;;          (set-fontset-font
-;;           "fontset-myfont" 'han
-;;           "-*-NSimSun-*-*-*-*-*-*-*-*-*-*-iso10646-1" nil 'prepend)
-;;          (set-fontset-font
-;;           "fontset-myfont" 'cjk-misc
-;;           "-*-NSimSun-*-*-*-*-*-*-*-*-*-*-iso10646-1" nil 'prepend)
-
-;;          ;; 不能设置unicode-bmp，因为中文和德文中的变音字符都属于该字符集。
-;; ;         (set-fontset-font
-;; ;          "fontset-myfont" 'unicode-bmp
-;; ;          "-*-NSimSun-*-*-*-*-12-*-*-*-*-*-iso10646-1" nil 'prepend)
-;;          (set-fontset-font
-;;           "fontset-myfont" 'symbol
-;;           "-*-NSimSun-*-*-*-*-*-*-*-*-*-*-iso10646-1" nil 'prepend)
-;;          )))
-
-;; ;; 新宋体
-
-;; (set-default-font "fontset-myfont")
-
-;; (add-to-list 'after-make-frame-functions
-;; (lambda (new-frame) (select-frame new-frame) (set-default-font "fontset-myfont")))
-
-
-;; windows 启动最大化
-;; (defun w32-restore-frame()
-;; "Restore a minimized frame"
-;; (interactive)
-;; (w32-send-sys-command 61728))
-
-;; (defun w32-maximize-frame()
-;; "Maximize the current frame"
-;; (interactive)
-;; (w32-send-sys-command 61488))
-
-;; (w32-maximize-frame)
-
-;; 如果关闭了工具条，则会在最底下出现一条空隙，这时，在注册表里面加上：
-;; [HKEY_LOCAL_MACHINE/SOFTWARE/GNU/EMACS] "EMACS.Toolbar"="0"
-;; 来解决
-
-
-;;; 外观(color-theme)设置
-;; (add-to-list 'load-path "~/site-lisp/color-theme-6.6.0")
-;; (require 'color-theme)
-;; (eval-after-load "color-theme"
-;;   '(progn
-;;      (color-theme-initialize)
-;;      (color-theme-gnome2)))
-
-;; lisp load path
-(add-to-list 'load-path "/usr/share/emacs/23.1/lisp")
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
 
