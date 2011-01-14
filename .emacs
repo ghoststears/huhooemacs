@@ -95,9 +95,6 @@
   (find-file (concat "~/" ".emacs")))
 (global-set-key (kbd "C-x E") 'visit-.emacs)
 
-(setq auto-mode-alist (cons '("\\.lua$" . lua-mode) auto-mode-alist))
-(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
-
 ;;------------------------------------------------------------------------------
 ;; artist-mode
 ;;------------------------------------------------------------------------------
@@ -135,6 +132,9 @@
 
 ;; grep settings
 (require 'grep-settings)
+
+;; lua settings
+(require 'lua-settings)
 
 ;;------------------------------------------------------------------------------
 ;; CMake
