@@ -1,0 +1,15 @@
+#name : Copyright information
+#
+# --
+/******************************************************************************\
+ *
+ * @file        `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.h
+ * @brief       
+ * @author      `user-full-name` (`user-mail-address`)
+ * @date        `(format-time-string "%Y-%m-%d %T")`
+ *
+ *     Copyright (C) `(format-time-string "%Y")`, `user-full-name`, all rights reserved.
+ * 
+\******************************************************************************/
+
+$0
