@@ -1,17 +1,7 @@
-#name : #file header info
+#name : file header info
 #
-# `(expand-file-name (directory-file-name buffer-file-name))`/`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.h
-#--
-/******************************************************************************\
- *
- * @file        `(directory-file-name buffer-file-name)`/`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.h
- * @brief       
- * @author      HuHoo (ghoststears@gmail.com)
- * @date        `(format-time-string "%Y-%m-%d %T")`
- *
- *     Copyright (C) `(format-time-string "%Y")`, `user-full-name`, all rights reserved.
- * 
-\******************************************************************************/
+# 
+# --
 
 #ifndef ${1:__`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H__}
 #define $1
