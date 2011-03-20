@@ -120,8 +120,9 @@
 (define-key global-map [(shift button3)] 'mouse-function-menu)
 (define-key global-map [(shift f4)] 'makeclean)
 (define-key global-map [(f4)] 'make)
-(define-key global-map [(f5)] 'makeinstall)
-(define-key global-map [(shift f5)] 'makeinstallexec) ; TODO replace with run-current-program
+;; (define-key global-map [(f5)] 'makeinstall)
+;; (define-key global-map [(shift f5)] 'makeinstallexec) ; TODO replace with run-curre
+nt-program
 (define-key global-map [(shift f6)] 'makethisfile)
 (if kde-emacs-newline-semicolon 
     (define-key c++-mode-map "\;" 'insert-semicolon))
@@ -129,8 +130,8 @@
 (define-key c-mode-map [(f6)] 'kde-switch-cpp-h)
 (define-key c++-mode-map [(f7)] 'switch-to-function-def)
 (define-key c-mode-map [(f7)] 'switch-to-function-def)
-(define-key c++-mode-map [(f9)] 'agulbra-make-member)
-(define-key c-mode-map [(f9)] 'agulbra-make-member)
+;; (define-key c++-mode-map [(f9)] 'agulbra-make-member)
+;; (define-key c-mode-map [(f9)] 'agulbra-make-member)
 (define-key global-map [(meta n)] 'next-error)
 
 ; kde-emacs-headers:

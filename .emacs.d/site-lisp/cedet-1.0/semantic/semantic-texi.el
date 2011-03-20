@@ -471,7 +471,7 @@ that start with that symbol."
 	senator-step-at-tag-classes '(section)
 	semantic-stickyfunc-sticky-classes '(section)
 	)
-  (local-set-key [(f9)] 'semantic-texi-update-doc-from-texi)
+  (local-set-key [C-f9] 'semantic-texi-update-doc-from-texi)
   )
 
 ;;;###autoload
