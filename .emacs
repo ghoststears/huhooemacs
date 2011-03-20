@@ -127,6 +127,9 @@
 ;; doxymacs
 (require 'doxymacs-settings)
 
+;; gdb settings
+(require 'gdb-settings)
+
 ;; git-emacs settings
 (require 'git-emacs-settings)
 
