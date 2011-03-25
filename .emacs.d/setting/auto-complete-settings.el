@@ -25,7 +25,8 @@
 (define-key ac-complete-mode-map "\C-p" 'ac-previous)
 
 (setq ac-dwim t)
-(setq ac-candidate-menu-height 20)
+(setq ac-auto-start 3)
+(setq ac-candidate-menu-height 5)
 (setq ac-candidate-max ac-candidate-menu-height)
 
 (set-default 'ac-sources
