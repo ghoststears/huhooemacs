@@ -3,8 +3,9 @@
 ;;;
 
 ;; without bool-bar
-(if (eq system-type 'gnu/linux)
-    (tool-bar-mode nil))
+;; (if (eq system-type 'gnu/linux)
+;;     (tool-bar-mode nil))
+(tool-bar-mode nil)
 
 ;; without menu-bar
 ;(menu-bar-mode nil)
