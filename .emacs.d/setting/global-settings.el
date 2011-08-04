@@ -3,15 +3,15 @@
 ;;;
 
 ;; without bool-bar
-;; (if (eq system-type 'gnu/linux)
-;;     (tool-bar-mode nil))
-(tool-bar-mode nil)
+;(if (eq system-type 'gnu/linux)
+;    (tool-bar-mode nil))
+;(tool-bar-mode nil)
 
 ;; without menu-bar
 ;(menu-bar-mode nil)
 
 ;; without scroll-bar
-(set-scroll-bar-mode nil)
+;(set-scroll-bar-mode nil)
 
 ;; show line number
 (global-linum-mode t)

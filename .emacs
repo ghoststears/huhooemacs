@@ -116,7 +116,7 @@
 (require 'auto-insert-settings)
 
 ;; cedet 
-(load "cedet-settings")
+;(load "cedet-settings")
 
 ;; ECB
 (require 'ecb-settings)
@@ -155,7 +155,8 @@
 (load "sql-settings")
 
 ;; font settings
-(load "font-settings")
+(if window-system
+    (load "font-settings"))
 
 ;; color theme
 (load "color-theme-settings")
