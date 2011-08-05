@@ -116,7 +116,7 @@
 (require 'auto-insert-settings)
 
 ;; cedet 
-;(load "cedet-settings")
+(load "cedet-settings")
 
 ;; ECB
 (require 'ecb-settings)
