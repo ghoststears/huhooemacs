@@ -1,3 +1,8 @@
 [user]
 	name = iHuHoo.W
-	email = ghoststears@gmail.com
+	email = ihuhoo.w@gmail.com
+[color]
+	ui = always
+[alias]
+	st = status
+	ci = commit

@@ -3,15 +3,15 @@
 ;;;
 
 ;; without bool-bar
-;(if (eq system-type 'gnu/linux)
-;    (tool-bar-mode nil))
-;(tool-bar-mode nil)
+(if window-system
+    (tool-bar-mode nil))
 
 ;; without menu-bar
 ;(menu-bar-mode nil)
 
 ;; without scroll-bar
-;(set-scroll-bar-mode nil)
+(if window-system
+    (set-scroll-bar-mode nil))
 
 ;; show line number
 (global-linum-mode t)
@@ -69,6 +69,10 @@
 
 ;; ”Ô∑®∏ﬂ¡¡
 (global-font-lock-mode t)
+
+;; highlight the current line by underline it
+(global-hl-line-mode 1)
+(set-face-attribute hl-line-face nil :underline t)
 
 ;; keyword-face use bold
 (set-face-bold-p 'font-lock-keyword-face t)

@@ -12,8 +12,13 @@ Thumbs.db
 .semanticdb/
 .srecode/
 .ssh/
+.subversion/
+mail/
 .ido.last
 .emacs.before_ecb_2.40
 .abbrev_defs
+.bash_history
+.rnd
+_viminfo
 abbrev_defs
-session.10b434dc517b6f5138129751994959454800000015800037
+session.*
