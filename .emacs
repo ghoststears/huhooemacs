@@ -115,14 +115,14 @@
 ;; auto inster 
 (require 'auto-insert-settings)
 
+;; c/cpp settings
+(require 'c-settings)
+
 ;; cedet 
 (load "cedet-settings")
 
 ;; ECB
 (require 'ecb-settings)
-
-;; c/cpp settings
-(require 'c-settings)
 
 ;; doxymacs
 (require 'doxymacs-settings)
