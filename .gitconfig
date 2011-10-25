@@ -4,5 +4,9 @@
 [color]
 	ui = always
 [alias]
-	st = status
+	br = branch
+	co = checkout
 	ci = commit
+	st = status
+[core]
+	autocrlf = true
