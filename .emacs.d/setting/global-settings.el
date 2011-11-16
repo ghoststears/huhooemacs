@@ -113,7 +113,8 @@
 ;; 最大容量
 (setq max-specpdl-size 10000)
 
-;; 用一个很大的 kill ring. 这样防止我不小心删掉重要的东西
+;; 用一个很大的 kill rin
+;; 这样防止我不小心删掉重要的东西
 (setq kill-ring-max 1024)
 
 ;; 撤销限制
@@ -195,5 +196,4 @@
 (global-set-key [C-S-return] 'zl-newline-up)
 
 (provide 'global-settings)
-
 
