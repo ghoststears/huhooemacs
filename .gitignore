@@ -19,6 +19,7 @@ mail/
 .abbrev_defs
 .bash_history
 .rnd
+tramp
 _viminfo
 abbrev_defs
 session.*
