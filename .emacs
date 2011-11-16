@@ -164,6 +164,10 @@
 (require 'maxframe)
 (add-hook 'window-setup-hook 'maximize-frame t)
 
+;; undo tree
+(require 'undo-tree)
+(global-undo-tree-mode)
+
 ;; maxframe
 ;; (require 'maxframe-setings)
 
