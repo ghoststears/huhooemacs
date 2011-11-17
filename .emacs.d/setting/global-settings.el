@@ -3,8 +3,8 @@
 ;;;
 
 ;; without bool-bar
-(if window-system
-    (tool-bar-mode nil))
+(if (window-system)
+    (setq tool-bar-mode nil))
 
 ;; without menu-bar
 ;(menu-bar-mode nil)
