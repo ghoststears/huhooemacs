@@ -1,5 +1,5 @@
 ;;;
-;;; È«¾ÖÍ¨ÓÃÉèÖÃ
+;;; å…¨å±€é€šç”¨è®¾ç½®
 ;;;
 
 ;; without bool-bar
@@ -37,37 +37,37 @@
 ;; none startup-message
 (setq inhibit-startup-message t)
 
-;; ½ûÖ¹ÔÚ²İ¸å»º´æÀïÃæÏÔÊ¾´¦Ê¼»¯ĞÅÏ¢
+;; ç¦æ­¢åœ¨è‰ç¨¿ç¼“å­˜é‡Œé¢æ˜¾ç¤ºå¤„å§‹åŒ–ä¿¡æ¯
 (setq initial-scratch-message nil)
 
-;; Ö§³ÖÖĞ¼üÕ³Ìù
+;; æ”¯æŒä¸­é”®ç²˜è´´
 (setq mouse-yank-at-point t)
 
-;; ÔÊĞíemacsºÍÍâ²¿ÆäËû³ÌĞòµÄÕ³Ìù
+;; å…è®¸emacså’Œå¤–éƒ¨å…¶ä»–ç¨‹åºçš„ç²˜è´´
 (setq x-select-enable-clipboard t)
 
-;; ×Ô¶¯É¨Ãèº¯ÊıÃû
+;; è‡ªåŠ¨æ‰«æå‡½æ•°å
 (setq imenu-auto-rescan 1)
 
-;; ÔÚ×´Ì¬ÌõÉÏÏÔÊ¾µ±Ç°¹â±êÔÚÄÄ¸öº¯ÊıÌåÄÚ²¿
+;; åœ¨çŠ¶æ€æ¡ä¸Šæ˜¾ç¤ºå½“å‰å…‰æ ‡åœ¨å“ªä¸ªå‡½æ•°ä½“å†…éƒ¨
 (which-function-mode t)
 
-;; µ±¹â±êÔÚĞĞÎ²ÉÏÏÂÒÆ¶¯µÄÊ±ºò£¬Ê¼ÖÕ±£³ÖÔÚĞĞÎ²¡£
+;; å½“å…‰æ ‡åœ¨è¡Œå°¾ä¸Šä¸‹ç§»åŠ¨çš„æ—¶å€™ï¼Œå§‹ç»ˆä¿æŒåœ¨è¡Œå°¾ã€‚
 (setq track-eol t)
 
-;; Ö»ÒªÒ»²Ù×÷Êó±ê×Ô¶¯ÉÁ¿ª
+;; åªè¦ä¸€æ“ä½œé¼ æ ‡è‡ªåŠ¨é—ªå¼€
 (mouse-avoidance-mode "banish")
 
-;; ¹â±êÔÚ TAB ×Ö·ûÉÏ»áÏÔÊ¾ÎªÒ»¸ö´ó·½¿é
+;; å…‰æ ‡åœ¨ TAB å­—ç¬¦ä¸Šä¼šæ˜¾ç¤ºä¸ºä¸€ä¸ªå¤§æ–¹å—
 (setq x-stretch-cursor t)
 
-;; ÈÃÑ¡ÖĞµÄÇøÓò¸ßÁÁÏÔÊ¾ 
+;; è®©é€‰ä¸­çš„åŒºåŸŸé«˜äº®æ˜¾ç¤º 
 (setq-default transient-mark-mode t)
 
-;; ±ê¼Ç¸ßÁÁ
+;; æ ‡è®°é«˜äº®
 (transient-mark-mode 1)
 
-;; Óï·¨¸ßÁÁ
+;; è¯­æ³•é«˜äº®
 (global-font-lock-mode t)
 
 ;; highlight the current line by underline it
@@ -80,74 +80,74 @@
 ;; comment-face
 (set-face-italic-p 'font-lock-comment-face t)
 
-;; Éè¶¨×Ô¶¯Ëõ½øµÄ×¢ÊÍ·ç¸ñ
+;; è®¾å®šè‡ªåŠ¨ç¼©è¿›çš„æ³¨é‡Šé£æ ¼
 (setq-default comment-style 'indent)
 
-;; ĞĞÎ²×Ô¶¯¼ÓÉÏÒ»¸öĞÂĞĞ
+;; è¡Œå°¾è‡ªåŠ¨åŠ ä¸Šä¸€ä¸ªæ–°è¡Œ
 (setq require-final-newline t)
 
-;; ÓÃyºÍnÀ´´úÌæyesºÍno¡£
+;; ç”¨yå’Œnæ¥ä»£æ›¿yeså’Œnoã€‚
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; ´ò¿ªÑ¹ËõÎÄ¼şÊ±×Ô¶¯½âÑ¹Ëõ
+;; æ‰“å¼€å‹ç¼©æ–‡ä»¶æ—¶è‡ªåŠ¨è§£å‹ç¼©
 (auto-compression-mode 1)
 
-;; ÏÔÊ¾À¨ºÅÆ¥Åä
+;; æ˜¾ç¤ºæ‹¬å·åŒ¹é…
 (show-paren-mode t)
 
-;; À¨ºÅÆ¥ÅäÏÔÊ¾µ«²»ÊÇ·³ÈËµÄÌøµ½ÁíÒ»¸öÀ¨ºÅ¡£
+;; æ‹¬å·åŒ¹é…æ˜¾ç¤ºä½†ä¸æ˜¯çƒ¦äººçš„è·³åˆ°å¦ä¸€ä¸ªæ‹¬å·ã€‚
 (setq show-paren-style 'parentheses)
 
-;; µ±²åÈëÓÒÀ¨ºÅÊ±²»ÏÔÊ¾Æ¥ÅäµÄ×óÀ¨ºÅ
+;; å½“æ’å…¥å³æ‹¬å·æ—¶ä¸æ˜¾ç¤ºåŒ¹é…çš„å·¦æ‹¬å·
 (setq blink-matching-paren nil)
 
-;; ÉèÖÃÄ¬ÈÏµØÖ÷Ä£Ê½ÎªTEXTÄ£Ê½
+;; è®¾ç½®é»˜è®¤åœ°ä¸»æ¨¡å¼ä¸ºTEXTæ¨¡å¼
 (setq default-major-mode 'text-mode)
 
-;; ×Ô¶¯¸üĞÂbuffer
+;; è‡ªåŠ¨æ›´æ–°buffer
 (setq auto-revert-mode 1)
 
-;; lisp×î´óÖ´ĞĞÉî¶È
+;; lispæœ€å¤§æ‰§è¡Œæ·±åº¦
 (setq max-lisp-eval-depth 40000)
 
-;; ×î´óÈİÁ¿
+;; æœ€å¤§å®¹é‡
 (setq max-specpdl-size 10000)
 
-;; ÓÃÒ»¸öºÜ´óµÄ kill rin
-;; ÕâÑù·ÀÖ¹ÎÒ²»Ğ¡ĞÄÉ¾µôÖØÒªµÄ¶«Î÷
+;; ç”¨ä¸€ä¸ªå¾ˆå¤§çš„ kill rin
+;; è¿™æ ·é˜²æ­¢æˆ‘ä¸å°å¿ƒåˆ æ‰é‡è¦çš„ä¸œè¥¿
 (setq kill-ring-max 1024)
 
-;; ³·ÏúÏŞÖÆ
+;; æ’¤é”€é™åˆ¶
 (setq undo-outer-limit 1024000)
 
-;; ÏÔÊ¾×Ö·û´°ÖĞµÄ»»ĞĞ·ûÎª \n
+;; æ˜¾ç¤ºå­—ç¬¦çª—ä¸­çš„æ¢è¡Œç¬¦ä¸º \n
 (setq print-escape-newlines t)
 
-;; ÉèÖÃmessage¼ÇÂ¼È«²¿ÏûÏ¢, ¶ø²»ÓÃ½ØÈ¥
+;; è®¾ç½®messageè®°å½•å…¨éƒ¨æ¶ˆæ¯, è€Œä¸ç”¨æˆªå»
 (setq message-log-max t)
 
-;; ÉèÖÃ ÒıÓÃ×Ö·û µÄ»ùÊı
+;; è®¾ç½® å¼•ç”¨å­—ç¬¦ çš„åŸºæ•°
 (setq read-quoted-char-radix 16)
 
-;; ½ûÖ¹ÏÔÊ¾Êó±êÖ¸Õë
+;; ç¦æ­¢æ˜¾ç¤ºé¼ æ ‡æŒ‡é’ˆ
 (setq void-text-area-pointer nil)
 
-;; minibuffer µİ¹éµ÷ÓÃÃüÁî
+;; minibuffer é€’å½’è°ƒç”¨å‘½ä»¤
 (setq enable-recursive-minibuffers t)
 
-;; ÉèÖÃÖ´ĞĞ±í´ïÊ½µÄ³¤¶ÈÃ»ÓĞÏŞÖÆ
+;; è®¾ç½®æ‰§è¡Œè¡¨è¾¾å¼çš„é•¿åº¦æ²¡æœ‰é™åˆ¶
 (setq eval-expression-print-length nil)
 
-;; ÉèÖÃÖ´ĞĞ±í´ïÊ½µÄÉî¶ÈÃ»ÓĞÏŞÖÆ
+;; è®¾ç½®æ‰§è¡Œè¡¨è¾¾å¼çš„æ·±åº¦æ²¡æœ‰é™åˆ¶
 (setq eval-expression-print-level nil)
 
-;; ÉèÖÃ×î´óµÄÈ«¾Ö±ê¼ÇÈİÁ¿
+;; è®¾ç½®æœ€å¤§çš„å…¨å±€æ ‡è®°å®¹é‡
 (setq global-mark-ring-max 1024)
 
-;; É¾³ıminibufferµÄÖØ¸´ÀúÊ·
+;; åˆ é™¤minibufferçš„é‡å¤å†å²
 (setq history-delete-duplicates t)
 
-;; ¿ªÆô±äÕ­ÇøÓò
+;; å¼€å¯å˜çª„åŒºåŸŸ
 (put 'narrow-to-region 'disabled nil)
 
 ;; use space to table
@@ -156,23 +156,23 @@
 ;; default table width
 (setq default-tab-width 4)
 
-;; ÏÔÊ¾Ê±¼ä£¬¸ñÊ½ÈçÏÂ
+;; æ˜¾ç¤ºæ—¶é—´ï¼Œæ ¼å¼å¦‚ä¸‹
 (display-time-mode 1)
 (setq display-time-24hr-format t)
 (setq display-time-day-and-date t)
 
-;; ÉèÖÃÄ¬ÈÏ´°¿Ú·Ö¸îÎª´¹Ö±·Ö¸î
+;; è®¾ç½®é»˜è®¤çª—å£åˆ†å‰²ä¸ºå‚ç›´åˆ†å‰²
 (setq split-width-threshold 1)
 
-;; Ö§³ÖÍ¼Æ¬
+;; æ”¯æŒå›¾ç‰‡
 (auto-image-file-mode t)
 
-;; ½â¾öemacs shell ÂÒÂë
+;; è§£å†³emacs shell ä¹±ç 
 (setq ansi-color-for-comint-mode t)
 (customize-group 'ansi-colors)
-(kill-this-buffer);¹Ø±Õcustomize´°¿Ú
+(kill-this-buffer);å…³é—­customizeçª—å£
 
-;; ĞÂ½¨Ò»ĞĞ£¬²»¹Ü¹â±êÔÚÄÄ
+;; æ–°å»ºä¸€è¡Œï¼Œä¸ç®¡å…‰æ ‡åœ¨å“ª
 (defun zl-newline nil
 "open new line belowe current line"
     (interactive)
@@ -180,10 +180,10 @@
     (newline)
 )
 
-;;; °ó¶¨ Shift + »Ø³µ ÎªĞÂ½¨Ò»ĞĞ(¹â±êÖ®ÏÂ)
+;;; ç»‘å®š Shift + å›è½¦ ä¸ºæ–°å»ºä¸€è¡Œ(å…‰æ ‡ä¹‹ä¸‹)
 (global-set-key [S-return] 'zl-newline)
 
-;;; ±¾ĞĞÉÏÃæĞÂ½¨Ò»ĞĞ£¬²»¹Ü¹â±êÔÚÄÄ
+;;; æœ¬è¡Œä¸Šé¢æ–°å»ºä¸€è¡Œï¼Œä¸ç®¡å…‰æ ‡åœ¨å“ª
 (defun zl-newline-up nil
 "open new line up current line"
     (interactive)
@@ -192,7 +192,7 @@
     (backward-char)
 )
 
-;;; °ó¶¨ Ctrl + Shift + »Ø³µ£¬ÎªĞÂ½¨Ò»ĞĞ(µ±Ç°¹â±êÖ®ÉÏ)
+;;; ç»‘å®š Ctrl + Shift + å›è½¦ï¼Œä¸ºæ–°å»ºä¸€è¡Œ(å½“å‰å…‰æ ‡ä¹‹ä¸Š)
 (global-set-key [C-S-return] 'zl-newline-up)
 
 (provide 'global-settings)
