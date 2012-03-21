@@ -182,13 +182,15 @@ specified by HEIGHT."
 system."
   (interactive)
   (cond ((eq window-system 'w32) (w32-maximize-frame))
-        ((memq window-system '(x mac)) (x-maximize-frame))))
+		;; modified by jmjeong, emacs 23 mac version returns 'ns'
+        ((memq window-system '(x ns)) (x-maximize-frame))))
 
 (defun restore-frame ()
   "Restores a maximized frame.  See `maximize-frame'."
   (interactive)
   (cond ((eq window-system 'w32) (w32-restore-frame))
-        ((memq window-system '(x mac)) (x-restore-frame))))
+		;; modified by jmjeong, emacs 23 mac version returns 'ns'
+        ((memq window-system '(x ns)) (x-restore-frame))))
 
 (defalias 'mf 'maximize-frame)
 

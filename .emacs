@@ -28,7 +28,7 @@
 
 
 ;; 设置默认工作目录
-;; (setq default-directory "~/work/")
+(setq default-directory "~/work/")
 
 ;; user information
 (require 'user-info-settings)
@@ -169,5 +169,5 @@
 (global-undo-tree-mode)
 
 ;; maxframe
-;; (require 'maxframe-setings)
+(require 'maxframe-settings)
 
