@@ -78,15 +78,15 @@
 ;; (require 'hide-lines)
 
 ;; 启用以下功能
-(put 'narrow-to-region 'disabled nil)
-(put 'downcase-region 'disabled nil)
-(put 'dired-find-alternate-file 'disabled nil)
+;(put 'narrow-to-region 'disabled nil)
+;(put 'downcase-region 'disabled nil)
+;(put 'dired-find-alternate-file 'disabled nil)
 
 ;; 括号自动完成
-(setq skeleton-pair t)
-(local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
-(local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
-(local-set-key (kbd "{") 'skeleton-pair-insert-maybe)
+;(setq skeleton-pair t)
+;(local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+;(local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+;(local-set-key (kbd "{") 'skeleton-pair-insert-maybe)
 ;(local-set-key (kbd "<") 'skeleton-pair-insert-maybe)
 
 (defun visit-.emacs ()
@@ -98,7 +98,7 @@
 ;;------------------------------------------------------------------------------
 ;; artist-mode
 ;;------------------------------------------------------------------------------
-(autoload 'artist-mode "artist" "Enter artist-mode" t)
+;(autoload 'artist-mode "artist" "Enter artist-mode" t)
 
 ;; browse kill ring setting.
 (require 'browse-kill-ring-settings)
@@ -145,24 +145,20 @@
 ;;------------------------------------------------------------------------------
 ;; CMake
 ;;------------------------------------------------------------------------------
-(require 'cmake-mode)
-(setq auto-mode-alist
-      (append '(("CMakeLists\\.txt\\'" . cmake-mode)
-                ("\\.cmake\\'" . cmake-mode))
-                auto-mode-alist))
+;(require 'cmake-mode)
+;(setq auto-mode-alist
+;      (append '(("CMakeLists\\.txt\\'" . cmake-mode)
+;                ("\\.cmake\\'" . cmake-mode))
+;                auto-mode-alist))
 
 ;; SQL for MySQL
 (load "sql-settings")
 
 ;; font settings
-(if window-system
-    (load "font-settings"))
+(if window-system (load "font-settings"))
 
 ;; color theme
 (load "color-theme-settings")
-
-(require 'maxframe)
-(add-hook 'window-setup-hook 'maximize-frame t)
 
 ;; undo tree
 (require 'undo-tree)
