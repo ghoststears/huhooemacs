@@ -86,7 +86,7 @@
   (copy-thing 'beginning-of-parenthesis 'end-of-parenthesis arg)
   )
 
-(global-set-key (kbd "C-c l"  'generic-copy-whole-line)
+(global-set-key (kbd "C-c l")  'generic-copy-whole-line)
 (global-set-key (kbd "C-c L") 'generic-copy-line)
 (global-set-key (kbd "C-c w") 'generic-copy-word)
 (global-set-key (kbd "C-c l") 'generic-copy-line)
