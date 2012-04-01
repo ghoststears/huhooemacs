@@ -5,7 +5,7 @@
 
 (require 'alpha-window)
 
-(global-set-key [(f11)] 'loop-alpha)
+(global-set-key [(f3)] 'loop-alpha)
 
 
 (provide 'alpha-window-settings)
