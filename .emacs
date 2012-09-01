@@ -170,3 +170,6 @@
 ;; maxframe
 (require 'maxframe-settings)
 
+;; nxhtml
+(require 'nxhtml-settings)
+(put 'set-goal-column 'disabled nil)
